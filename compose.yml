@@ -2,14 +2,14 @@
 version: "3"
 services:
  devopsdb:
-   image: shaikmustafa/mynewapp:dbimage
+   image: pandudevops/mynewapp:dbimage
    ports:
      - "3306:3306"
    deploy:
      replicas: 4
 
  application:
-   image: shaikmustafa/mynewapp:appimage
+   image: pandudevops/mynewapp:appimage
    ports:
      - "1111:8080"
    deploy:
